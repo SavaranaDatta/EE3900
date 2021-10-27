@@ -1,0 +1,225 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{gensymb}
+\singlespacing
+\usepackage[cmex10]{amsmath}
+\usepackage{amssymb}
+\usepackage{xurl}
+
+\usepackage{amsthm}
+\usepackage{comment}
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{tkz-euclide}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+\raggedbottom
+\setlength{\parindent}{0pt}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\vert#1\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\lVert#1\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E[ #1 ]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\numberwithin{equation}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+\renewcommand{\thefigure}{\theproblem}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{ GATE Assignment 4}
+\author{Savarana Datta - AI20BTECH11008}
+\maketitle
+\newpage
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+Download all python codes from 
+\begin{lstlisting}
+https://github.com/SavaranaDatta/EE3900/tree/main/GATE Assignment4/codes
+\end{lstlisting}
+%
+and latex codes from 
+%
+\begin{lstlisting}
+https://github.com/SavaranaDatta/EE3900/tree/main/GATE Assignment4/main.tex
+\end{lstlisting}
+
+\section{Problem(GATE 2005(EC) 2.25)}
+A linear system is equivalently represented by two sets of state equations $\dot{X}=AX+BU$ and $\dot{W}=CW+DU$. The eigen values of the representations are also computed as $[\lambda]$ and $[\mu]$. Which of the following statements are true?
+\begin{enumerate}
+    \item $[\lambda]=[\mu]$ and $X=W$
+    \item $[\lambda]=[\mu]$ and $X\neq W$
+    \item $[\lambda]\neq[\mu]$ and $X=W$
+    \item $[\lambda]\neq[\mu]$ and $X\neq W$
+\end{enumerate}
+\section{Solution}
+\begin{definition}[State Space representation]
+It is a mathematical model of a physical system, as a set of input, output and state variables related by first order difference or differential equations. The most general state representation of a linear system with p inputs, q outputs, and n state variables can be written as
+\begin{align}
+    \vec{\dot X}&=\vec{A}\vec{X}+\vec{B}\vec{U}\\
+    \vec{Y}&=\vec{C}\vec{X}+\vec{D}\vec{U}
+\end{align}
+where, $\vec{X}\in R^n$ is the state vector, $\vec{Y}\in R^q$ is the output vector, $\vec{U}\in R^p$ is input vector, $\vec{A}\in R^{n\times n}$ is the state matrix, $\vec{B}\in R^{n\times p}$ is input matrix, $\vec{C}\in R^{q\times n}$ is output matrix, $\vec{D}\in R^{q\times p}$ is feedthrough matrix.
+\end{definition}
+\begin{definition}[Eigen values of State Space representation] 
+These are the solutions of the charecteristic equation
+\begin{align}
+    \triangle(\lambda)=det(\lambda \vec{I}-\vec{A})=0
+\end{align}
+where A is the state matrix. 
+\end{definition}
+\begin{theorem}
+Consider the n-dimensional continuous time linear system
+\begin{align}
+    \vec{\dot X}=\vec{A}\vec{X}+\vec{B}\vec{U}, \vec{Y}=\vec{C}\vec{X}+\vec{D}\vec{U}
+    \label{eq:org}
+\end{align}
+Let $\vec{T}$ be an $n\times n$ real non-singular matrix and let $\vec{\bar X}= \vec{T}\vec{X}$. Then the state equation 
+\begin{align}
+    \vec{\dot{\bar X}}=\vec{\bar A}\vec{\bar X}+ \vec{\bar B}\vec{U}, \vec{Y}=\vec{\bar C}\vec{\bar X}+\vec{\bar D}\vec{U}
+    \label{eq:new}
+\end{align}
+where $\vec{\bar A}=\vec{T}\vec{A}\vec{T}^{-1}, \vec{\bar B}=\vec{T}\vec{B}, \vec{\bar C}=\vec{C}\vec{T}^{-1}, \vec{\bar D}=\vec{D}$ is said to be equivalent to \eqref{eq:org}.
+\label{eq:th1}
+\end{theorem}
+\begin{proof}
+Given, $\vec{\dot X}=\vec{A}\vec{X}+\vec{B}\vec{U} \text{ and } \vec{Y}=\vec{C}\vec{X}+\vec{D}\vec{U}$, $T$ is a non-singular matrix such that $\vec{\bar X}= \vec{T}\vec{X}$. The same system can be defined using $\vec{\bar X}$ as the state,
+\begin{align}
+    \vec{\dot{\bar X}}&=\vec{T}\vec{\dot X}=\vec{T}\vec{A}\vec{X}+\vec{T}\vec{B}\vec{U}\\
+    &=\vec{T}\vec{A}\vec{T}^{-1}\vec{\bar X}+\vec{T}\vec{B}\vec{U}\\
+    \vec{Y}&=\vec{C}\vec{X}+\vec{D}\vec{U}=\vec{C}\vec{T}^{-1}\vec{\bar X}+\vec{D}\vec{U}
+\end{align}
+\end{proof}
+\begin{theorem}
+Equivalent state space representations have same set of eigen values
+\label{eq:th2}
+\end{theorem}
+\begin{proof}
+For the representation in \eqref{eq:org}, the eigen values [$\lambda$] are such that
+\begin{align}
+    \vec{A}\vec{x}&=\lambda \vec{x}\\
+    \Rightarrow(\vec{A}-\lambda \vec{I})\vec{x}&=0\\
+    \Rightarrow det(\vec{A}-\lambda \vec{I}&=0
+\end{align}
+For the representation in \eqref{eq:new}, the eigen values [$\mu$], are such that
+\begin{align}
+    \vec{\bar A}\vec{x}&=\mu \vec{x}\\
+    \Rightarrow(\vec{\bar A}-\mu \vec{I})\vec{x}&=0\\
+    \Rightarrow(\vec{T}\vec{A}\vec{T}^{-1}-\mu \vec{T}\vec{T}^{-1})\vec{x}&=0\\
+    \Rightarrow det(\vec{T}(\vec{A}-\mu \vec{I})\vec{T}^{-1})&=0\\
+    \Rightarrow det(\vec{A}-\mu \vec{I})&=0
+\end{align}
+Hence, equivalent state space representations have same set of eigen values.
+\end{proof}
+Here,
+\begin{align}
+    \vec{\dot X}&=\vec{A}\vec{X}+\vec{B}\vec{U}\\
+    \vec{\dot W}&=\vec{C}\vec{W}+\vec{D}\vec{U}
+\end{align}
+both the equations represent the same system. Hence, using \ref{eq:th1} and \ref{eq:th2}, we can conclude that
+\begin{align}
+    [\lambda]&=[\mu] \text{  and}\\
+    \vec{W}&=\vec{T}\vec{X}
+\end{align}
+where $\vec{T}$ can be any matrix(need not be an identity matrix).
+Hence, option 2 is the correct answer.
+\end{document}
+
